@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "cf870648-7475-471c-a7fb-395db756dfa6",
+		"name": "Loan API",
+		"description": "## 📖 Loan API Overview\n\nThe Loan API is designed to facilitate the management of personal loans for bank customers. It allows bank employees to efficiently create, track, and process loan payments. The API includes four main endpoints:\n\n1. **Create Loan** (`POST /loans`): This endpoint allows the creation of a new loan for a customer, ensuring they have sufficient credit limit and specifying the loan amount, interest rate, and number of installments.\n    \n2. **List Loans** (`GET /loans?customerId={id}`): This endpoint retrieves all loans associated with a specific customer, enabling employees to view loan details and statuses.\n    \n3. **List Installments** (`GET /loans/{loanId}/installments`): This endpoint provides a detailed list of installments for a specific loan, helping employees track payment schedules and amounts due.\n    \n4. **Pay Loan** (`POST /loans/{loanId}/pay`): This endpoint processes payments for loan installments, allowing employees to pay off one or more installments based on the amount provided, while adhering to payment rules and restrictions.\n    \n\nTogether, these endpoints streamline the loan management process, enhancing operational efficiency for bank employees.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "34264994"
+	},
+	"item": [
+		{
+			"name": "List Loans",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Installments",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Create Loan",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Pay Loan",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
