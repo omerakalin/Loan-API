@@ -25,7 +25,7 @@ public class DataInitializer {
         return args -> {
             if (customerRepository.count() == 0) {
 
-                // ➤ Kullanıcıları oluştur
+                // Kullanıcıları oluştur
                 Customer ali = new Customer("Ali", "Veli", 5000.0, 0.0);
                 Customer ayse = new Customer("Ayşe", "Fatma", 10000.0, 0.0);
                 Customer john = new Customer("John", "Doe", 8000.0, 0.0);
@@ -33,7 +33,7 @@ public class DataInitializer {
 
                 customerRepository.saveAll(List.of(ali, ayse, john, maria));
 
-                // ➤ Loans ve Installments oluştur (davranış senaryolarıyla)
+                // Loans ve Installments oluştur (davranış senaryolarıyla)
                 createLoanWithBehavior(ali, loanRepository, loanInstallmentRepository, customerRepository, 1200.0, 12, 6, "late");
                 createLoanWithBehavior(ayse, loanRepository, loanInstallmentRepository, customerRepository, 2400.0, 12, 12, "early");
                 createLoanWithBehavior(john, loanRepository, loanInstallmentRepository, customerRepository, 1800.0, 9, 9, "late");
